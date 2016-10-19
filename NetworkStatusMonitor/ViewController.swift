@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ReachabilitySwift
+
 
 class ViewController: UIViewController {
 
@@ -19,7 +21,32 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ReachabilityManager.shared.addDelegate(delegate: self)
+    }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        ReachabilityManager.shared.removeDelegate(delegate: self)
+    }
 
+}
+
+extension ViewController: NetworkStatusListener {
+    
+    func networkStatusDidChange(status: Reachability.NetworkStatus) {
+        
+        switch status {
+        case .notReachable:
+            debugPrint("ViewController: Network became unreachable")
+        case .reachableViaWiFi:
+            debugPrint("ViewController: Network reachable through WiFi")
+        case .reachableViaWWAN:
+            debugPrint("ViewController: Network reachable through Cellular Data")
+        }
+    }
 }
 

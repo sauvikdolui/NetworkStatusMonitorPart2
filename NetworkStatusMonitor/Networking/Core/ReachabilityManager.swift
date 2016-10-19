@@ -9,6 +9,12 @@
 import Foundation
 import ReachabilitySwift // 1 Importing the Library
 
+
+/// Protocol for listenig network status change
+public protocol NetworkStatusListener : NSObjectProtocol {
+    func networkStatusDidChange(status: Reachability.NetworkStatus)
+}
+
 class ReachabilityManager: NSObject {
     
     static let shared = ReachabilityManager()  // 2. Shared instance
@@ -24,6 +30,8 @@ class ReachabilityManager: NSObject {
     // 5. Reachibility instance for Network status monitoring
     let reachability = Reachability()!
     
+    // 6. Array of delegates which are interested to listen to network status change
+    var delegates = [NetworkStatusListener]()
     
     
     
@@ -31,7 +39,9 @@ class ReachabilityManager: NSObject {
     ///
     /// — parameter notification: Notification with the Reachability instance
     func reachabilityChanged(notification: Notification) {
+        
         let reachability = notification.object as! Reachability
+
         switch reachability.currentReachabilityStatus {
         case .notReachable:
             debugPrint("Network became unreachable")
@@ -39,6 +49,10 @@ class ReachabilityManager: NSObject {
             debugPrint("Network reachable through WiFi")
         case .reachableViaWWAN:
             debugPrint("Network reachable through Cellular Data")
+        }
+
+        for delegate in delegates {
+            delegate.networkStatusDidChange(status: reachability.currentReachabilityStatus)
         }
     }
     
@@ -62,5 +76,20 @@ class ReachabilityManager: NSObject {
         reachability.stopNotifier()
         NotificationCenter.default.removeObserver(self, name: ReachabilityChangedNotification,
                                                   object: reachability)
+    }
+    
+    
+    /// Added a new listener to the delegates array
+    ///
+    /// - parameter delegate: a new listener
+    func addDelegate(delegate: NetworkStatusListener){
+        delegates.append(delegate)
+    }
+    
+    /// Removes a listener from delegate array
+    ///
+    /// - parameter delegate: the listener which is to be removed
+    func removeDelegate(delegate: NetworkStatusListener){
+        delegates = delegates.filter{ $0 !== delegate}
     }
 }
