@@ -50,7 +50,8 @@ class ReachabilityManager: NSObject {
         case .reachableViaWWAN:
             debugPrint("Network reachable through Cellular Data")
         }
-
+        
+        // Sending message to each of the delegates
         for delegate in delegates {
             delegate.networkStatusDidChange(status: reachability.currentReachabilityStatus)
         }
@@ -79,7 +80,7 @@ class ReachabilityManager: NSObject {
     }
     
     
-    /// Added a new listener to the delegates array
+    /// Adds a new listener to the delegates array
     ///
     /// - parameter delegate: a new listener
     func addDelegate(delegate: NetworkStatusListener){
