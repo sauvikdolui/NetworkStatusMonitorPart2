@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17FB4EF32EC171AC50B8CE619643AB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */; };
+		291760D79150611286FEF0320A6BA31C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */; };
+		3E95592378D5746A39472380A7705F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */; };
+		595CD74D03134148F1B45630D4D2D980 /* Pods-NetworkStatusMonitorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE6CAD62DE49A4CBDEED43DD7DC8569 /* Pods-NetworkStatusMonitorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65CA56C805C942815038E4AE155AAB26 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */; };
+		7CC8DB428FEB43EBE291FFA4D4F81AE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7219921F39E1CD4FF9E45687961DA8 /* SystemConfiguration.framework */; };
+		A6C2F90733389428C4485B28F49EEC65 /* Pods-NetworkStatusMonitorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975747DB3C893EE7C44A0F61CD2BC9 /* Pods-NetworkStatusMonitorUITests-dummy.m */; };
+		AB0633B70DE33839726E93FD4ABA42E0 /* Pods-NetworkStatusMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B85B4C005DDAB26100C7AC3B601E0 /* Pods-NetworkStatusMonitor-dummy.m */; };
+		BBE0DBE25BEEA65F04465CB3DB1EC4CB /* Pods-NetworkStatusMonitorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4949AEA5D2C46FAE368A2BF7A578899 /* Pods-NetworkStatusMonitorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE79817BA2D8F41D045737CFC774166B /* Pods-NetworkStatusMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C1010639E85A60850277373B0A98EE /* Pods-NetworkStatusMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA5FD2CA7BB5DB51CA88A287DED7BA9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */; };
+		F1DA0691470C7CF957FB9E26F22B280A /* Pods-NetworkStatusMonitorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB9C637026E05F10964A8B8487394 /* Pods-NetworkStatusMonitorTests-dummy.m */; };
+		F9C0B3653092F06578CA340A286FE7BC /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */; };
+		FCB1A1B926E4C6825423CFDF68F89A75 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C60BC21F08BE2DD324B27BD91280454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDC98DE2675BDA4723454F9044282C7;
+			remoteInfo = ReachabilitySwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022DFEACFD5D0041997A86770F17F9C8 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		0D7219921F39E1CD4FF9E45687961DA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0F267A6A5E41570422AC7AA129BBEC49 /* Pods-NetworkStatusMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB2A29A6FDCDB14FFEAD8642AAFF91B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20975747DB3C893EE7C44A0F61CD2BC9 /* Pods-NetworkStatusMonitorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkStatusMonitorUITests-dummy.m"; sourceTree = "<group>"; };
+		22291E092B7D55C3FC8CFB40DA7A77E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		2B639DD4BF9D251CC65006952F2B24F0 /* Pods-NetworkStatusMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DF4DA6E045BF9F1C1AC765BD1E518A7 /* Pods-NetworkStatusMonitorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkStatusMonitorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		476F31E0FE49EEF917F531FDA96549A0 /* Pods-NetworkStatusMonitorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitorTests-frameworks.sh"; sourceTree = "<group>"; };
+		4D52FB85A11CBD7AED5F3D554AE07770 /* Pods-NetworkStatusMonitorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkStatusMonitorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FC9562CBBF4E959AB6FE37863B105F7 /* Pods-NetworkStatusMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		51DDB9C637026E05F10964A8B8487394 /* Pods-NetworkStatusMonitorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkStatusMonitorTests-dummy.m"; sourceTree = "<group>"; };
+		55719DF48F1310E67FDF00226FC36FF2 /* Pods-NetworkStatusMonitorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkStatusMonitorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		58774038622C3FBAFAA4B1D88CF1292C /* Pods-NetworkStatusMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D5A5BF39CCB59D3EB6F87EF476CF044 /* Pods-NetworkStatusMonitorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NetworkStatusMonitorTests.modulemap"; sourceTree = "<group>"; };
+		61972167F4FD99BE247908D1C2252D66 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C1010639E85A60850277373B0A98EE /* Pods-NetworkStatusMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkStatusMonitor-umbrella.h"; sourceTree = "<group>"; };
+		73317E2D9AD606B72779A5E797C2730E /* Pods-NetworkStatusMonitor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitor-frameworks.sh"; sourceTree = "<group>"; };
+		771A58878061FCAE88C699254D88A003 /* Pods-NetworkStatusMonitorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitorUITests-resources.sh"; sourceTree = "<group>"; };
+		7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		7C2F9E20A7BEAA06DC6D2EB26BDC050A /* Pods_NetworkStatusMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkStatusMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE6CAD62DE49A4CBDEED43DD7DC8569 /* Pods-NetworkStatusMonitorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkStatusMonitorUITests-umbrella.h"; sourceTree = "<group>"; };
+		81057DA479DC8BD4C01CDCF70E0F49CF /* Pods-NetworkStatusMonitor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkStatusMonitor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		88E766F86C88D2DCB24C863DA4CB1839 /* Pods-NetworkStatusMonitor-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitor-resources.sh"; sourceTree = "<group>"; };
+		8A6951B80A4DB4F365815CE0C94F8B49 /* Pods_NetworkStatusMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkStatusMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE37BDD15F95B2434E03B396032A252 /* Pods-NetworkStatusMonitorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94BB13134EDA021D006668A81CDFD1DE /* Pods-NetworkStatusMonitorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NetworkStatusMonitorUITests.modulemap"; sourceTree = "<group>"; };
+		A6F44855447C8FE3B4EEF23F861B5DC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B173BE3B93AB1275BE127C26E452E50D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B246E92E70E549802B55098A7D9A4D59 /* Pods-NetworkStatusMonitor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NetworkStatusMonitor.modulemap"; sourceTree = "<group>"; };
+		B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		B8A6267CA636F99337080CF4A35DE5D9 /* Pods_NetworkStatusMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkStatusMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3AF42288AE813B85B27D1E38ABA74B6 /* Pods-NetworkStatusMonitor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkStatusMonitor-acknowledgements.plist"; sourceTree = "<group>"; };
+		C83B22AA12F333F2726894B4319B4CB2 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		DC9B85B4C005DDAB26100C7AC3B601E0 /* Pods-NetworkStatusMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkStatusMonitor-dummy.m"; sourceTree = "<group>"; };
+		DFD97CC98FD5DD8EF4CBD5A85DC3F6F6 /* Pods-NetworkStatusMonitorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetworkStatusMonitorTests-resources.sh"; sourceTree = "<group>"; };
+		E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		EC6B58EFF5BCBD6DF3F04476103202A9 /* Pods-NetworkStatusMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1219ACF25314C540FF035076E5373C6 /* Pods-NetworkStatusMonitorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkStatusMonitorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1F7F4A732CEAD76B189DED364E60202 /* Pods-NetworkStatusMonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkStatusMonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4949AEA5D2C46FAE368A2BF7A578899 /* Pods-NetworkStatusMonitorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkStatusMonitorTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A4492BE88EBBAF155C93225BD35F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E95592378D5746A39472380A7705F97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508B1E49977FC476C79762D1455C6DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291760D79150611286FEF0320A6BA31C /* Foundation.framework in Frameworks */,
+				7CC8DB428FEB43EBE291FFA4D4F81AE4 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589131F71DAA392446058557F79E4A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FB4EF32EC171AC50B8CE619643AB77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A602B16809E63CBFA798FA1FC2EFAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5FD2CA7BB5DB51CA88A287DED7BA9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B744B30DE8516C08390CF007F460620 /* Pods-NetworkStatusMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22291E092B7D55C3FC8CFB40DA7A77E8 /* Info.plist */,
+				94BB13134EDA021D006668A81CDFD1DE /* Pods-NetworkStatusMonitorUITests.modulemap */,
+				4D52FB85A11CBD7AED5F3D554AE07770 /* Pods-NetworkStatusMonitorUITests-acknowledgements.markdown */,
+				F1219ACF25314C540FF035076E5373C6 /* Pods-NetworkStatusMonitorUITests-acknowledgements.plist */,
+				20975747DB3C893EE7C44A0F61CD2BC9 /* Pods-NetworkStatusMonitorUITests-dummy.m */,
+				8AE37BDD15F95B2434E03B396032A252 /* Pods-NetworkStatusMonitorUITests-frameworks.sh */,
+				771A58878061FCAE88C699254D88A003 /* Pods-NetworkStatusMonitorUITests-resources.sh */,
+				7DE6CAD62DE49A4CBDEED43DD7DC8569 /* Pods-NetworkStatusMonitorUITests-umbrella.h */,
+				EC6B58EFF5BCBD6DF3F04476103202A9 /* Pods-NetworkStatusMonitorUITests.debug.xcconfig */,
+				58774038622C3FBAFAA4B1D88CF1292C /* Pods-NetworkStatusMonitorUITests.release.xcconfig */,
+			);
+			name = "Pods-NetworkStatusMonitorUITests";
+			path = "Target Support Files/Pods-NetworkStatusMonitorUITests";
+			sourceTree = "<group>";
+		};
+		288F0BB5C5CA0B55440ADD1AD50C9353 /* Pods-NetworkStatusMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B173BE3B93AB1275BE127C26E452E50D /* Info.plist */,
+				5D5A5BF39CCB59D3EB6F87EF476CF044 /* Pods-NetworkStatusMonitorTests.modulemap */,
+				2DF4DA6E045BF9F1C1AC765BD1E518A7 /* Pods-NetworkStatusMonitorTests-acknowledgements.markdown */,
+				55719DF48F1310E67FDF00226FC36FF2 /* Pods-NetworkStatusMonitorTests-acknowledgements.plist */,
+				51DDB9C637026E05F10964A8B8487394 /* Pods-NetworkStatusMonitorTests-dummy.m */,
+				476F31E0FE49EEF917F531FDA96549A0 /* Pods-NetworkStatusMonitorTests-frameworks.sh */,
+				DFD97CC98FD5DD8EF4CBD5A85DC3F6F6 /* Pods-NetworkStatusMonitorTests-resources.sh */,
+				F4949AEA5D2C46FAE368A2BF7A578899 /* Pods-NetworkStatusMonitorTests-umbrella.h */,
+				F1F7F4A732CEAD76B189DED364E60202 /* Pods-NetworkStatusMonitorTests.debug.xcconfig */,
+				2B639DD4BF9D251CC65006952F2B24F0 /* Pods-NetworkStatusMonitorTests.release.xcconfig */,
+			);
+			name = "Pods-NetworkStatusMonitorTests";
+			path = "Target Support Files/Pods-NetworkStatusMonitorTests";
+			sourceTree = "<group>";
+		};
+		349714AA54A5B9B308FB3CF2740B5696 /* Pods-NetworkStatusMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A6F44855447C8FE3B4EEF23F861B5DC3 /* Info.plist */,
+				B246E92E70E549802B55098A7D9A4D59 /* Pods-NetworkStatusMonitor.modulemap */,
+				81057DA479DC8BD4C01CDCF70E0F49CF /* Pods-NetworkStatusMonitor-acknowledgements.markdown */,
+				C3AF42288AE813B85B27D1E38ABA74B6 /* Pods-NetworkStatusMonitor-acknowledgements.plist */,
+				DC9B85B4C005DDAB26100C7AC3B601E0 /* Pods-NetworkStatusMonitor-dummy.m */,
+				73317E2D9AD606B72779A5E797C2730E /* Pods-NetworkStatusMonitor-frameworks.sh */,
+				88E766F86C88D2DCB24C863DA4CB1839 /* Pods-NetworkStatusMonitor-resources.sh */,
+				65C1010639E85A60850277373B0A98EE /* Pods-NetworkStatusMonitor-umbrella.h */,
+				0F267A6A5E41570422AC7AA129BBEC49 /* Pods-NetworkStatusMonitor.debug.xcconfig */,
+				4FC9562CBBF4E959AB6FE37863B105F7 /* Pods-NetworkStatusMonitor.release.xcconfig */,
+			);
+			name = "Pods-NetworkStatusMonitor";
+			path = "Target Support Files/Pods-NetworkStatusMonitor";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1D77D531BDDEEE979D1705B7870C1FA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AD06AA9147824A5955E395FB782670E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8A6267CA636F99337080CF4A35DE5D9 /* Pods_NetworkStatusMonitor.framework */,
+				8A6951B80A4DB4F365815CE0C94F8B49 /* Pods_NetworkStatusMonitorTests.framework */,
+				7C2F9E20A7BEAA06DC6D2EB26BDC050A /* Pods_NetworkStatusMonitorUITests.framework */,
+				61972167F4FD99BE247908D1C2252D66 /* ReachabilitySwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9BCD5CBAACE7E3EBED55F693896BB924 /* Pods */,
+				7AD06AA9147824A5955E395FB782670E /* Products */,
+				8E00FC2927407DC753F9DFC137AB29EF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E00FC2927407DC753F9DFC137AB29EF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				349714AA54A5B9B308FB3CF2740B5696 /* Pods-NetworkStatusMonitor */,
+				288F0BB5C5CA0B55440ADD1AD50C9353 /* Pods-NetworkStatusMonitorTests */,
+				1B744B30DE8516C08390CF007F460620 /* Pods-NetworkStatusMonitorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9BCD5CBAACE7E3EBED55F693896BB924 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCCB16BA3F38D5553162F93FAF492 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9ED4EC8142E9CD679F2F17116535C39 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BB2A29A6FDCDB14FFEAD8642AAFF91B /* Info.plist */,
+				C83B22AA12F333F2726894B4319B4CB2 /* ReachabilitySwift.modulemap */,
+				E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */,
+				7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */,
+				022DFEACFD5D0041997A86770F17F9C8 /* ReachabilitySwift-prefix.pch */,
+				275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		B1D77D531BDDEEE979D1705B7870C1FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8300F47EEB39E49255907D5DFC5B2A48 /* Foundation.framework */,
+				0D7219921F39E1CD4FF9E45687961DA8 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F47FCCB16BA3F38D5553162F93FAF492 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */,
+				A9ED4EC8142E9CD679F2F17116535C39 /* Support Files */,
+			);
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0333A22A34EF5BCCC1F8A21A4F2C23A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE0DBE25BEEA65F04465CB3DB1EC4CB /* Pods-NetworkStatusMonitorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF908F65CC80131B881BECA93B2FAFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB1A1B926E4C6825423CFDF68F89A75 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65EF51281E1871C572F7B76ABF38EAA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595CD74D03134148F1B45630D4D2D980 /* Pods-NetworkStatusMonitorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B2367DCA691ECEB8A57FEC0A1E567 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE79817BA2D8F41D045737CFC774166B /* Pods-NetworkStatusMonitor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		416841B76A8C1D9783AA011CCE920B4D /* Pods-NetworkStatusMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F6EBBB2481D6532A74F2B66A610E211 /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitor" */;
+			buildPhases = (
+				C416CE4A543B110EA78AAFC919A9787B /* Sources */,
+				35A4492BE88EBBAF155C93225BD35F5B /* Frameworks */,
+				A73B2367DCA691ECEB8A57FEC0A1E567 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2290CBF508E735220C438AB04DEC39E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-NetworkStatusMonitor";
+			productName = "Pods-NetworkStatusMonitor";
+			productReference = B8A6267CA636F99337080CF4A35DE5D9 /* Pods_NetworkStatusMonitor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		711A24ED7C7B7BA7BEA158DC8BBBDE30 /* Pods-NetworkStatusMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6399CE236621463F95C295475BC78DA9 /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitorUITests" */;
+			buildPhases = (
+				C5CA32DF42C00E31CAB5B43FFBACE505 /* Sources */,
+				6A602B16809E63CBFA798FA1FC2EFAC0 /* Frameworks */,
+				65EF51281E1871C572F7B76ABF38EAA5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NetworkStatusMonitorUITests";
+			productName = "Pods-NetworkStatusMonitorUITests";
+			productReference = 7C2F9E20A7BEAA06DC6D2EB26BDC050A /* Pods_NetworkStatusMonitorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B795E62B59B31AF79CD0E8A251D8763B /* Pods-NetworkStatusMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4981C7CFFE725AFCD2BA3C7B570DECC /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitorTests" */;
+			buildPhases = (
+				727FEED34B4914166FA5A1E9D62B5024 /* Sources */,
+				589131F71DAA392446058557F79E4A23 /* Frameworks */,
+				0333A22A34EF5BCCC1F8A21A4F2C23A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NetworkStatusMonitorTests";
+			productName = "Pods-NetworkStatusMonitorTests";
+			productReference = 8A6951B80A4DB4F365815CE0C94F8B49 /* Pods_NetworkStatusMonitorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFDC98DE2675BDA4723454F9044282C7 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5A9A896F7C03A96C4E75394C2E475D /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				DBD8C72E666A4BC81825F8985CFD3F97 /* Sources */,
+				508B1E49977FC476C79762D1455C6DE0 /* Frameworks */,
+				4FF908F65CC80131B881BECA93B2FAFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 61972167F4FD99BE247908D1C2252D66 /* ReachabilitySwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					416841B76A8C1D9783AA011CCE920B4D = {
+						LastSwiftMigration = 0800;
+					};
+					EFDC98DE2675BDA4723454F9044282C7 = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7AD06AA9147824A5955E395FB782670E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				416841B76A8C1D9783AA011CCE920B4D /* Pods-NetworkStatusMonitor */,
+				B795E62B59B31AF79CD0E8A251D8763B /* Pods-NetworkStatusMonitorTests */,
+				711A24ED7C7B7BA7BEA158DC8BBBDE30 /* Pods-NetworkStatusMonitorUITests */,
+				EFDC98DE2675BDA4723454F9044282C7 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727FEED34B4914166FA5A1E9D62B5024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DA0691470C7CF957FB9E26F22B280A /* Pods-NetworkStatusMonitorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C416CE4A543B110EA78AAFC919A9787B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0633B70DE33839726E93FD4ABA42E0 /* Pods-NetworkStatusMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5CA32DF42C00E31CAB5B43FFBACE505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C2F90733389428C4485B28F49EEC65 /* Pods-NetworkStatusMonitorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD8C72E666A4BC81825F8985CFD3F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CA56C805C942815038E4AE155AAB26 /* Reachability.swift in Sources */,
+				F9C0B3653092F06578CA340A286FE7BC /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2290CBF508E735220C438AB04DEC39E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = EFDC98DE2675BDA4723454F9044282C7 /* ReachabilitySwift */;
+			targetProxy = 8C60BC21F08BE2DD324B27BD91280454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AB14AC2FE4A08515806708C05823057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ReachabilitySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FACEE07BE94B638C1042DD3C798D445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B639DD4BF9D251CC65006952F2B24F0 /* Pods-NetworkStatusMonitorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitorTests/Pods-NetworkStatusMonitorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F6F70435B8D10296308D0AC3A4D4F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC9562CBBF4E959AB6FE37863B105F7 /* Pods-NetworkStatusMonitor.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitor/Pods-NetworkStatusMonitor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		818C6DEC474C614BEEB3F4597154C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F7F4A732CEAD76B189DED364E60202 /* Pods-NetworkStatusMonitorTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitorTests/Pods-NetworkStatusMonitorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B95DC5920DCACF6DB1B6EE8956CED1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ReachabilitySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B246A97271587B7E5D39A814A88CB5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F267A6A5E41570422AC7AA129BBEC49 /* Pods-NetworkStatusMonitor.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitor/Pods-NetworkStatusMonitor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBA010585D6A8F6208CC0FEDA7F14479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6B58EFF5BCBD6DF3F04476103202A9 /* Pods-NetworkStatusMonitorUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitorUITests/Pods-NetworkStatusMonitorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEA056D233E8CD862C7D10FA08AD735E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58774038622C3FBAFAA4B1D88CF1292C /* Pods-NetworkStatusMonitorUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkStatusMonitorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkStatusMonitorUITests/Pods-NetworkStatusMonitorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetworkStatusMonitorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B5A9A896F7C03A96C4E75394C2E475D /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB14AC2FE4A08515806708C05823057 /* Debug */,
+				9B95DC5920DCACF6DB1B6EE8956CED1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6399CE236621463F95C295475BC78DA9 /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA010585D6A8F6208CC0FEDA7F14479 /* Debug */,
+				FEA056D233E8CD862C7D10FA08AD735E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F6EBBB2481D6532A74F2B66A610E211 /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B246A97271587B7E5D39A814A88CB5D4 /* Debug */,
+				6F6F70435B8D10296308D0AC3A4D4F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4981C7CFFE725AFCD2BA3C7B570DECC /* Build configuration list for PBXNativeTarget "Pods-NetworkStatusMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818C6DEC474C614BEEB3F4597154C5FA /* Debug */,
+				1FACEE07BE94B638C1042DD3C798D445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
