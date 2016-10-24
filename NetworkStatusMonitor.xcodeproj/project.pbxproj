@@ -18,6 +18,7 @@
 		45189C9F1DB51279005FDF92 /* NetworkStatusMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45189C9E1DB51279005FDF92 /* NetworkStatusMonitorUITests.swift */; };
 		45220E0E1DB62B5B00B396EA /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45220E0D1DB62B5B00B396EA /* ReachabilityManager.swift */; };
 		45220E101DB663F900B396EA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 45220E0F1DB663F900B396EA /* README.md */; };
+		45E1CB3E1DBE166B00CB8F8C /* NetworkStatusMonitoringFromVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 45E1CB3D1DBE166A00CB8F8C /* NetworkStatusMonitoringFromVC.gif */; };
 		EED82ADE57D1D8D0F722E3EA /* Pods_NetworkStatusMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0141DEA5FC4BB79A9456B475 /* Pods_NetworkStatusMonitorTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		45189CA01DB51279005FDF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45220E0D1DB62B5B00B396EA /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		45220E0F1DB663F900B396EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		45E1CB3D1DBE166A00CB8F8C /* NetworkStatusMonitoringFromVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = NetworkStatusMonitoringFromVC.gif; sourceTree = "<group>"; };
 		62797423E77EA5098FEF21DF /* Pods-NetworkStatusMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkStatusMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkStatusMonitor/Pods-NetworkStatusMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		6F0E0AB032D689616EA1C67C /* Pods-NetworkStatusMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkStatusMonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkStatusMonitorUITests/Pods-NetworkStatusMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE6171FF8D512B4083A0A5E /* Pods-NetworkStatusMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkStatusMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkStatusMonitorTests/Pods-NetworkStatusMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				45220E0F1DB663F900B396EA /* README.md */,
+				45E1CB3D1DBE166A00CB8F8C /* NetworkStatusMonitoringFromVC.gif */,
 				45189C7D1DB51278005FDF92 /* NetworkStatusMonitor */,
 				45189C921DB51279005FDF92 /* NetworkStatusMonitorTests */,
 				45189C9D1DB51279005FDF92 /* NetworkStatusMonitorUITests */,
@@ -310,6 +313,7 @@
 			files = (
 				45189C891DB51278005FDF92 /* LaunchScreen.storyboard in Resources */,
 				45189C861DB51278005FDF92 /* Assets.xcassets in Resources */,
+				45E1CB3E1DBE166B00CB8F8C /* NetworkStatusMonitoringFromVC.gif in Resources */,
 				45189C841DB51278005FDF92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

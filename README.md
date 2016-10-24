@@ -1,5 +1,5 @@
 # NetworkStatusMonitorStarter
-Repository for project of Medium Blog [Network reachability status monitoring on iOS (Part 1)](https://medium.com/@sauvik_dolui/network-status-monitoring-on-ios-part-1-9a22276933dc#.r59gm4w8f)
+Repository for project of Medium Blog [Network reachability status monitoring on iOS (Part 2)](https://medium.com/@sauvik_dolui/network-status-monitoring-on-ios-part-1-9a22276933dc#.r59gm4w8f)
 
 ### How to use?
  1. Install ReachibilitySwift with `pod ‘ReachabilitySwift’, ‘~> 3’` with `cocoapods`
@@ -26,6 +26,47 @@ func applicationWillEnterForeground(_ application: UIApplication) {
   ReachabilityManager.shared.stopMonitoring()
 }
 ```
+
+### Listen from View Controllers
+
+
+1. Implement `NetworkStatusListener` in `ViewController` class
+
+```swift
+extension ViewController: NetworkStatusListener {
+
+    func networkStatusDidChange(status: Reachability.NetworkStatus) {
+
+        switch status {
+        case .notReachable:
+        debugPrint("ViewController: Network became unreachable")
+        case .reachableViaWiFi:
+        debugPrint("ViewController: Network reachable through WiFi")
+        case .reachableViaWWAN:
+        debugPrint("ViewController: Network reachable through Cellular Data")
+        }
+
+        // Take necessary actions here
+
+    }
+}
+```
+
+2. Override `viewWillAppear(_:)` and `viewDidDisappear(_:)`
+
+
+```swift
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    ReachabilityManager.shared.addDelegate(delegate: self)
+}
+
+override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    ReachabilityManager.shared.removeDelegate(delegate: self)
+}
+```
+
 
 ### Result
 

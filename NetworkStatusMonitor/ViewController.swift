@@ -11,6 +11,11 @@ import ReachabilitySwift
 
 
 class ViewController: UIViewController {
+    
+    // IBOutlets
+    @IBOutlet var loginButton: UIButton!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +52,9 @@ extension ViewController: NetworkStatusListener {
         case .reachableViaWWAN:
             debugPrint("ViewController: Network reachable through Cellular Data")
         }
+        
+        // Update login button Enable/Disable status
+        loginButton.isEnabled = !(status == .notReachable)
     }
 }
 
