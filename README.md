@@ -30,7 +30,7 @@ func applicationWillEnterForeground(_ application: UIApplication) {
 ### Listen from View Controllers
 
 
-1. Implement `NetworkStatusListener` in `ViewController` class
+    1. Implement `NetworkStatusListener` in `ViewController` class
 
 ```swift
 extension ViewController: NetworkStatusListener {
@@ -53,7 +53,7 @@ extension ViewController: NetworkStatusListener {
 ```
 
 
-2. Override `viewWillAppear(_:)` and `viewDidDisappear(_:)`
+    2. Override `viewWillAppear(_:)` and `viewDidDisappear(_:)`
 
 
 ```swift
