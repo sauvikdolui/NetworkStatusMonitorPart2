@@ -70,4 +70,4 @@ override func viewDidDisappear(_ animated: Bool) {
 
 ### Result
 
-![Output Video](https://raw.githubusercontent.com/sauvikatinnofied/NetworkStatusMonitorPart1/master/NetworkStatusMonitorResultBlog1.gif)
+![Output Video](https://github.com/sauvikatinnofied/NetworkStatusMonitorPart2/blob/master/NetworkStatusMonitoringFromVC.gif?raw=true)
