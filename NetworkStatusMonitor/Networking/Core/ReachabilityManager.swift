@@ -31,7 +31,7 @@ class ReachabilityManager: NSObject {
     let reachability = Reachability()!
     
     // 6. Array of delegates which are interested to listen to network status change
-    var delegates = [NetworkStatusListener]()
+    weak var delegates = [NetworkStatusListener]()
     
     
     
