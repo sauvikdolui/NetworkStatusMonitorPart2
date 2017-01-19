@@ -11,7 +11,7 @@ import ReachabilitySwift // 1 Importing the Library
 
 
 /// Protocol for listenig network status change
-public protocol NetworkStatusListener : NSObjectProtocol {
+public protocol NetworkStatusListener : class {
     func networkStatusDidChange(status: Reachability.NetworkStatus)
 }
 
@@ -31,7 +31,7 @@ class ReachabilityManager: NSObject {
     let reachability = Reachability()!
     
     // 6. Array of delegates which are interested to listen to network status change
-    weak var delegates = [NetworkStatusListener]()
+    var listeners = [NetworkStatusListener]()
     
     
     
@@ -52,8 +52,8 @@ class ReachabilityManager: NSObject {
         }
         
         // Sending message to each of the delegates
-        for delegate in delegates {
-            delegate.networkStatusDidChange(status: reachability.currentReachabilityStatus)
+        for listener in listeners {
+            listener.networkStatusDidChange(status: reachability.currentReachabilityStatus)
         }
     }
     
@@ -83,14 +83,14 @@ class ReachabilityManager: NSObject {
     /// Adds a new listener to the delegates array
     ///
     /// - parameter delegate: a new listener
-    func addDelegate(delegate: NetworkStatusListener){
-        delegates.append(delegate)
+    func addListener(listener: NetworkStatusListener){
+        listeners.append(listener)
     }
     
     /// Removes a listener from delegate array
     ///
     /// - parameter delegate: the listener which is to be removed
-    func removeDelegate(delegate: NetworkStatusListener){
-        delegates = delegates.filter{ $0 !== delegate}
+    func removeListener(listener: NetworkStatusListener){
+        listeners = listeners.filter{ $0 !== listener}
     }
 }
