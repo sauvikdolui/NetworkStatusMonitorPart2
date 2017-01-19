@@ -80,14 +80,14 @@ class ReachabilityManager: NSObject {
     }
     
     
-    /// Adds a new listener to the delegates array
+    /// Adds a new listener to the listeners array
     ///
     /// - parameter delegate: a new listener
     func addListener(listener: NetworkStatusListener){
         listeners.append(listener)
     }
     
-    /// Removes a listener from delegate array
+    /// Removes a listener from listeners array
     ///
     /// - parameter delegate: the listener which is to be removed
     func removeListener(listener: NetworkStatusListener){
