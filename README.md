@@ -59,12 +59,12 @@ extension ViewController: NetworkStatusListener {
 ```swift
 override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    ReachabilityManager.shared.addDelegate(delegate: self)
+    ReachabilityManager.shared.addListener(listener: self)
 }
 
 override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
-    ReachabilityManager.shared.removeDelegate(delegate: self)
+    ReachabilityManager.shared.removeListener(listener: self)
 }
 ```
 
