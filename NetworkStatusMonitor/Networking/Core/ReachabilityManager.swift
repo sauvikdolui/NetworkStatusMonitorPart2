@@ -41,7 +41,8 @@ class ReachabilityManager: NSObject {
     func reachabilityChanged(notification: Notification) {
         
         let reachability = notification.object as! Reachability
-
+        reachabilityStatus = reachability.currentReachabilityStatus
+      
         switch reachability.currentReachabilityStatus {
         case .notReachable:
             debugPrint("Network became unreachable")
